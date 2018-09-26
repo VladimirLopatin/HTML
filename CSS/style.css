@@ -20,5 +20,29 @@ p {
 }
 
 a[href="http://google.com"] {
-	color: red;
+	color: purple;
+}
+
+a[href="http://yandex.ru"] {
+	color: pink;
+}
+
+.container h3 {
+	background: blue;
+}
+
+.container > p {
+	text-decoration: line-through;
+}
+
+#heading + span {
+	color: yellow;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1::first-letter {
+	color: #d2d2d2;
 }
