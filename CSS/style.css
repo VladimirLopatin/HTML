@@ -1,3 +1,6 @@
-p {
+p, h1 {
 	color: #d2d2d2;
+}
+p {
+	font-size: 24px;
 }
