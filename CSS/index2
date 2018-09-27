@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My first site</title>
+</head>
+<body>
+	<h1>Мой первый сайт</h1>
+	<p>Любимая актриса и очень красивая девушка</p>
+	<img src="ma.jpg" alt="">
+</body>
+</html>
