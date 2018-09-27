@@ -1,0 +1,28 @@
+.wrap {
+	width: 750px;
+	margin: auto;
+}
+header {
+	background: green;
+}
+
+.content, aside {
+	height: 300px;
+}
+
+.content {
+	float: left;
+	background: gray;
+	width: 80%;
+}
+
+aside {
+	float: left;
+	background: red;
+	width: 20%;
+}
+
+footer {
+	background: blue;
+	clear: both;
+}
