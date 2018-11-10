@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Изучаем JS</title>
+    <script type="text/javascript" href="JavaScript_Date_and_time.js">
+    </script>  
+</head>
+<body>
+    <script type="text/javascript">
+        var date = new Date();
+        text = "Год сейчас -" + date.getFullYear();
+        text += "\nМесяц сейчас -" + date.getMonth();
+        text += "\nДень сейчас -" + date.getDay();
+        text += "\nЧасов сейчас -" + date.getHours();
+        text += "\nМинут сейчас -" + date.getMinutes();
+        text += "\nСекунд сейчас -" + date.getSeconds();
+//ы        alert(text);
+
+        var date = new Date (2000, 0, 12, 14, 23, 43); // год, месяц, день, часы, минуты, секунды.
+        date.setMinutes(30);
+
+        text = "Год сейчас -" + date.getFullYear();
+        text += "\nМесяц сейчас -" + date.getMonth();
+        text += "\nДень сейчас -" + date.getDay();
+        text += "\nЧасов сейчас -" + date.getHours();
+        text += "\nМинут сейчас -" + date.getMinutes();
+        text += "\nСекунд сейчас -" + date.getSeconds();
+        alert(text);
+
+    </script>   
+</body>
+</html>
