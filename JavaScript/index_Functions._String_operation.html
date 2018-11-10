@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Изучаем JS</title>
+    <script type="text/javascript" href="JavaScript_Functions._String_operation.js">
+    </script>  
+</head>
+<body>
+    <script type="text/javascript">
+        var string = "Небольшая строка";
+        
+        var text = "Длина строки равна - " + string.length;
+        text += "\nСтрока в верхнем регистре - " + string.toUpperCase();
+        text += "\nСтрока в нижнем регистре - " + string.toLowerCase();
+        text += "\nОбрезанная строка - " + string.substring(1, 5);
+        text += "\nТретий символ - " + string.charAt(3);
+        text += "\n'Стро' начинается с индекса - " + string.indexOf("стро");
+
+        alert(text);
+    </script>   
+</body>
+</html>
