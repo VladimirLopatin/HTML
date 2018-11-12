@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Распознавание голоса и чтение текста</title>
+    <script type="text/javascript" href="JavaScript_Voice_recognition_and_text_reading.js">
+    </script>  
+</head>
+<body>
+
+    <button onclick="speech ()">Слушать</button>
+    <button onclick="talk ()">Проговорить</button>
+    <button onclick="stop ()">Остановить</button>
+
+<script type="text/javascript">
+
+
+// Создаем распознаватель
+    var recognizer = new webkitSpeechRecognition();
+
+// Ставим опцию, чтобы распознавание началось еще
+// до того, как пользователь закончит говорить
+    recognizer.interimResults = true;
+
+// Какой язык будем распознавать?
+    recognizer.lang = 'ru-Ru';
+
+// Используем колбек для обработки результатов
+    recognizer.onresult = function(event) {
+        var result = event.results[event.resultIndex];
+        if (result.isFinal) {
+            alert('Вы сказали: ' + result[0].transcript);
+        }   else {
+            console.log('Промежуточный вариант: ', result[0].transcript);
+        }
+    };
+
+    function speech () {
+
+// Начинаем слушать микрофон и распознавать речь
+    recognizer.start();
+}
+
+    var synth = window.speechSynthesis;
+    var utterance = new SpeechSynthesisUtterance('How about we say this now? This is quite a long sentence to say.');
+
+    function talk () {
+        speechSynthesis.speak (utterance);
+    }
+
+    function stop () {
+        synth.pause();
+    }
+    </script>   
+</body>
+</html>
